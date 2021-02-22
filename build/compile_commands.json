@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/gcc-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -o CMakeFiles/main.dir/glad.c.o -c /home/danil/Desktop/KG2021/template1_cpp/glad.c",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/glad.c"
+},
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/g++-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -std=gnu++14 -o CMakeFiles/main.dir/Image.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/Image.cpp",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/Image.cpp"
+},
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/g++-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -std=gnu++14 -o CMakeFiles/main.dir/Player.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/Player.cpp",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/Player.cpp"
+},
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/g++-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -std=gnu++14 -o CMakeFiles/main.dir/main.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/main.cpp",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/main.cpp"
+},
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/g++-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -std=gnu++14 -o CMakeFiles/main.dir/game.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/game.cpp",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/game.cpp"
+},
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/g++-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -std=gnu++14 -o CMakeFiles/main.dir/game_object.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/game_object.cpp",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/game_object.cpp"
+},
+{
+  "directory": "/home/danil/Desktop/KG2021/template1_cpp/build",
+  "command": "/usr/bin/g++-7 -DGLFW_DLL -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD -g -Wnarrowing -std=gnu++14 -o CMakeFiles/main.dir/resource_manager.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/resource_manager.cpp",
+  "file": "/home/danil/Desktop/KG2021/template1_cpp/resource_manager.cpp"
+}
+]

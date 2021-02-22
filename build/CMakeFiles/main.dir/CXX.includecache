@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/danil/Desktop/KG2021/template1_cpp/Image.h
+string
+-
+
+/home/danil/Desktop/KG2021/template1_cpp/Player.cpp
+Player.h
+/home/danil/Desktop/KG2021/template1_cpp/Player.h
+
+/home/danil/Desktop/KG2021/template1_cpp/Player.h
+game_object.h
+/home/danil/Desktop/KG2021/template1_cpp/game_object.h
+
+/home/danil/Desktop/KG2021/template1_cpp/game_object.h
+Image.h
+/home/danil/Desktop/KG2021/template1_cpp/Image.h
+
