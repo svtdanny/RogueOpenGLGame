@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DGLFW_DLL
 
-C_INCLUDES = -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD
+C_INCLUDES = -I/home/danil/Desktop/KG2021/RogueGame/dependencies/include/GLAD
 
 C_FLAGS = -Wnarrowing
 
 CXX_DEFINES = -DGLFW_DLL
 
-CXX_INCLUDES = -I/home/danil/Desktop/KG2021/template1_cpp/dependencies/include/GLAD
+CXX_INCLUDES = -I/home/danil/Desktop/KG2021/RogueGame/dependencies/include/GLAD
 
 CXX_FLAGS = -Wnarrowing -std=gnu++14
 

@@ -6,29 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/danil/Desktop/KG2021/template1_cpp/Image.cpp
+/home/danil/Desktop/KG2021/RogueGame/Image.cpp
 Image.h
-/home/danil/Desktop/KG2021/template1_cpp/Image.h
-stb_image.h
-/home/danil/Desktop/KG2021/template1_cpp/stb_image.h
-stb_image_write.h
-/home/danil/Desktop/KG2021/template1_cpp/stb_image_write.h
+/home/danil/Desktop/KG2021/RogueGame/Image.h
+resource_manager.h
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.h
 iostream
 -
 
-/home/danil/Desktop/KG2021/template1_cpp/Image.h
+/home/danil/Desktop/KG2021/RogueGame/Image.h
 string
 -
 
-/home/danil/Desktop/KG2021/template1_cpp/Player.cpp
+/home/danil/Desktop/KG2021/RogueGame/Player.cpp
 Player.h
-/home/danil/Desktop/KG2021/template1_cpp/Player.h
+/home/danil/Desktop/KG2021/RogueGame/Player.h
 
-/home/danil/Desktop/KG2021/template1_cpp/Player.h
-Image.h
-/home/danil/Desktop/KG2021/template1_cpp/Image.h
+/home/danil/Desktop/KG2021/RogueGame/Player.h
+game_object.h
+/home/danil/Desktop/KG2021/RogueGame/game_object.h
 
-/home/danil/Desktop/KG2021/template1_cpp/common.h
+/home/danil/Desktop/KG2021/RogueGame/common.h
 iostream
 -
 fstream
@@ -38,19 +36,65 @@ string
 glad/glad.h
 -
 
-/home/danil/Desktop/KG2021/template1_cpp/main.cpp
-common.h
-/home/danil/Desktop/KG2021/template1_cpp/common.h
-Image.h
-/home/danil/Desktop/KG2021/template1_cpp/Image.h
-Player.h
-/home/danil/Desktop/KG2021/template1_cpp/Player.h
+/home/danil/Desktop/KG2021/RogueGame/game.cpp
+game.h
+/home/danil/Desktop/KG2021/RogueGame/game.h
+
+/home/danil/Desktop/KG2021/RogueGame/game.h
 GLFW/glfw3.h
 -
 
-/home/danil/Desktop/KG2021/template1_cpp/stb_image.h
+/home/danil/Desktop/KG2021/RogueGame/game_object.cpp
+game_object.h
+/home/danil/Desktop/KG2021/RogueGame/game_object.h
+common.h
+/home/danil/Desktop/KG2021/RogueGame/common.h
+resource_manager.h
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.h
+
+/home/danil/Desktop/KG2021/RogueGame/game_object.h
+Image.h
+/home/danil/Desktop/KG2021/RogueGame/Image.h
+
+/home/danil/Desktop/KG2021/RogueGame/main.cpp
+common.h
+/home/danil/Desktop/KG2021/RogueGame/common.h
+Image.h
+/home/danil/Desktop/KG2021/RogueGame/Image.h
+Player.h
+/home/danil/Desktop/KG2021/RogueGame/Player.h
+game.h
+/home/danil/Desktop/KG2021/RogueGame/game.h
+resource_manager.h
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.h
+GLFW/glfw3.h
+-
+
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.cpp
+resource_manager.h
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.h
+iostream
+-
+sstream
+-
+fstream
+-
 stb_image.h
-/home/danil/Desktop/KG2021/template1_cpp/stb_image.h
+/home/danil/Desktop/KG2021/RogueGame/stb_image.h
+stb_image_write.h
+/home/danil/Desktop/KG2021/RogueGame/stb_image_write.h
+
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.h
+map
+-
+string
+-
+Image.h
+/home/danil/Desktop/KG2021/RogueGame/Image.h
+
+/home/danil/Desktop/KG2021/RogueGame/stb_image.h
+stb_image.h
+/home/danil/Desktop/KG2021/RogueGame/stb_image.h
 stdio.h
 -
 stdlib.h
@@ -80,7 +124,7 @@ intrin.h
 arm_neon.h
 -
 
-/home/danil/Desktop/KG2021/template1_cpp/stb_image_write.h
+/home/danil/Desktop/KG2021/RogueGame/stb_image_write.h
 stdlib.h
 -
 stdio.h

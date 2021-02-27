@@ -17,6 +17,15 @@ CMakeFiles/main.dir/Player.cpp.o: ../game_object.h
 CMakeFiles/main.dir/game.cpp.o: ../game.cpp
 CMakeFiles/main.dir/game.cpp.o: ../game.h
 
+CMakeFiles/main.dir/game_level.cpp.o: ../dependencies/include/GLAD/KHR/khrplatform.h
+CMakeFiles/main.dir/game_level.cpp.o: ../dependencies/include/GLAD/glad/glad.h
+CMakeFiles/main.dir/game_level.cpp.o: ../Image.h
+CMakeFiles/main.dir/game_level.cpp.o: ../common.h
+CMakeFiles/main.dir/game_level.cpp.o: ../game_level.cpp
+CMakeFiles/main.dir/game_level.cpp.o: ../game_level.h
+CMakeFiles/main.dir/game_level.cpp.o: ../game_object.h
+CMakeFiles/main.dir/game_level.cpp.o: ../resource_manager.h
+
 CMakeFiles/main.dir/game_object.cpp.o: ../dependencies/include/GLAD/KHR/khrplatform.h
 CMakeFiles/main.dir/game_object.cpp.o: ../dependencies/include/GLAD/glad/glad.h
 CMakeFiles/main.dir/game_object.cpp.o: ../Image.h
@@ -31,6 +40,7 @@ CMakeFiles/main.dir/main.cpp.o: ../Image.h
 CMakeFiles/main.dir/main.cpp.o: ../Player.h
 CMakeFiles/main.dir/main.cpp.o: ../common.h
 CMakeFiles/main.dir/main.cpp.o: ../game.h
+CMakeFiles/main.dir/main.cpp.o: ../game_level.h
 CMakeFiles/main.dir/main.cpp.o: ../game_object.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 CMakeFiles/main.dir/main.cpp.o: ../resource_manager.h

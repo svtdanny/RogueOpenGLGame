@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/danil/Desktop/KG2021/template1_cpp/glad.c" "/home/danil/Desktop/KG2021/template1_cpp/CMakeFiles/main.dir/glad.c.o"
+  "/home/danil/Desktop/KG2021/RogueGame/glad.c" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -19,9 +19,12 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "dependencies/include/GLAD"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/danil/Desktop/KG2021/template1_cpp/Image.cpp" "/home/danil/Desktop/KG2021/template1_cpp/CMakeFiles/main.dir/Image.cpp.o"
-  "/home/danil/Desktop/KG2021/template1_cpp/Player.cpp" "/home/danil/Desktop/KG2021/template1_cpp/CMakeFiles/main.dir/Player.cpp.o"
-  "/home/danil/Desktop/KG2021/template1_cpp/main.cpp" "/home/danil/Desktop/KG2021/template1_cpp/CMakeFiles/main.dir/main.cpp.o"
+  "/home/danil/Desktop/KG2021/RogueGame/Image.cpp" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/Image.cpp.o"
+  "/home/danil/Desktop/KG2021/RogueGame/Player.cpp" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/Player.cpp.o"
+  "/home/danil/Desktop/KG2021/RogueGame/game.cpp" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/game.cpp.o"
+  "/home/danil/Desktop/KG2021/RogueGame/game_object.cpp" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/game_object.cpp.o"
+  "/home/danil/Desktop/KG2021/RogueGame/main.cpp" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/main.cpp.o"
+  "/home/danil/Desktop/KG2021/RogueGame/resource_manager.cpp" "/home/danil/Desktop/KG2021/RogueGame/CMakeFiles/main.dir/resource_manager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

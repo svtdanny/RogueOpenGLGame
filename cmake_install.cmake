@@ -1,4 +1,4 @@
-# Install script for directory: /home/danil/Desktop/KG2021/template1_cpp
+# Install script for directory: /home/danil/Desktop/KG2021/RogueGame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/danil/Desktop/KG2021/template1_cpp/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/danil/Desktop/KG2021/RogueGame/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/danil/Desktop/KG2021/template1_cpp/glad.c
+/home/danil/Desktop/KG2021/RogueGame/glad.c
 stdio.h
 -
 stdlib.h

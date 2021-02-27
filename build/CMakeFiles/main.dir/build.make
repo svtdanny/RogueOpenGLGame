@@ -62,10 +62,10 @@ RM = /home/danil/.local/lib/python3.6/site-packages/cmake/data/bin/cmake -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danil/Desktop/KG2021/template1_cpp
+CMAKE_SOURCE_DIR = /home/danil/Desktop/KG2021/RogueGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danil/Desktop/KG2021/template1_cpp/build
+CMAKE_BINARY_DIR = /home/danil/Desktop/KG2021/RogueGame/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -78,94 +78,107 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/glad.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/glad.c.o: ../glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/glad.c.o"
-	/usr/bin/gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/glad.c.o -c /home/danil/Desktop/KG2021/template1_cpp/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/glad.c.o"
+	/usr/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/glad.c.o -c /home/danil/Desktop/KG2021/RogueGame/glad.c
 
 CMakeFiles/main.dir/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/glad.c.i"
-	/usr/bin/gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/glad.c > CMakeFiles/main.dir/glad.c.i
+	/usr/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/glad.c > CMakeFiles/main.dir/glad.c.i
 
 CMakeFiles/main.dir/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/glad.c.s"
-	/usr/bin/gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/glad.c -o CMakeFiles/main.dir/glad.c.s
+	/usr/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/glad.c -o CMakeFiles/main.dir/glad.c.s
 
 CMakeFiles/main.dir/Image.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Image.cpp.o: ../Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Image.cpp.o"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Image.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Image.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/Image.cpp
 
 CMakeFiles/main.dir/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Image.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/Image.cpp > CMakeFiles/main.dir/Image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/Image.cpp > CMakeFiles/main.dir/Image.cpp.i
 
 CMakeFiles/main.dir/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Image.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/Image.cpp -o CMakeFiles/main.dir/Image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/Image.cpp -o CMakeFiles/main.dir/Image.cpp.s
 
 CMakeFiles/main.dir/Player.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Player.cpp.o"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Player.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Player.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/Player.cpp
 
 CMakeFiles/main.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Player.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/Player.cpp > CMakeFiles/main.dir/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/Player.cpp > CMakeFiles/main.dir/Player.cpp.i
 
 CMakeFiles/main.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Player.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/Player.cpp -o CMakeFiles/main.dir/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/Player.cpp -o CMakeFiles/main.dir/Player.cpp.s
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/game.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/game.cpp.o: ../game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/game.cpp.o"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/game.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/game.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/game.cpp
 
 CMakeFiles/main.dir/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/game.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/game.cpp > CMakeFiles/main.dir/game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/game.cpp > CMakeFiles/main.dir/game.cpp.i
 
 CMakeFiles/main.dir/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/game.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/game.cpp -o CMakeFiles/main.dir/game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/game.cpp -o CMakeFiles/main.dir/game.cpp.s
 
 CMakeFiles/main.dir/game_object.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/game_object.cpp.o: ../game_object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/game_object.cpp.o"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/game_object.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/game_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/game_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/game_object.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/game_object.cpp
 
 CMakeFiles/main.dir/game_object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/game_object.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/game_object.cpp > CMakeFiles/main.dir/game_object.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/game_object.cpp > CMakeFiles/main.dir/game_object.cpp.i
 
 CMakeFiles/main.dir/game_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/game_object.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/game_object.cpp -o CMakeFiles/main.dir/game_object.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/game_object.cpp -o CMakeFiles/main.dir/game_object.cpp.s
 
 CMakeFiles/main.dir/resource_manager.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/resource_manager.cpp.o: ../resource_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/resource_manager.cpp.o"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/resource_manager.cpp.o -c /home/danil/Desktop/KG2021/template1_cpp/resource_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/resource_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/resource_manager.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/resource_manager.cpp
 
 CMakeFiles/main.dir/resource_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/resource_manager.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/template1_cpp/resource_manager.cpp > CMakeFiles/main.dir/resource_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/resource_manager.cpp > CMakeFiles/main.dir/resource_manager.cpp.i
 
 CMakeFiles/main.dir/resource_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/resource_manager.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/template1_cpp/resource_manager.cpp -o CMakeFiles/main.dir/resource_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/resource_manager.cpp -o CMakeFiles/main.dir/resource_manager.cpp.s
+
+CMakeFiles/main.dir/game_level.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/game_level.cpp.o: ../game_level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/game_level.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/game_level.cpp.o -c /home/danil/Desktop/KG2021/RogueGame/game_level.cpp
+
+CMakeFiles/main.dir/game_level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/game_level.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danil/Desktop/KG2021/RogueGame/game_level.cpp > CMakeFiles/main.dir/game_level.cpp.i
+
+CMakeFiles/main.dir/game_level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/game_level.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danil/Desktop/KG2021/RogueGame/game_level.cpp -o CMakeFiles/main.dir/game_level.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -175,7 +188,8 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/game.cpp.o" \
 "CMakeFiles/main.dir/game_object.cpp.o" \
-"CMakeFiles/main.dir/resource_manager.cpp.o"
+"CMakeFiles/main.dir/resource_manager.cpp.o" \
+"CMakeFiles/main.dir/game_level.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -187,11 +201,12 @@ main_EXTERNAL_OBJECTS =
 ../bin/main: CMakeFiles/main.dir/game.cpp.o
 ../bin/main: CMakeFiles/main.dir/game_object.cpp.o
 ../bin/main: CMakeFiles/main.dir/resource_manager.cpp.o
+../bin/main: CMakeFiles/main.dir/game_level.cpp.o
 ../bin/main: CMakeFiles/main.dir/build.make
 ../bin/main: /usr/lib/x86_64-linux-gnu/libGL.so
 ../bin/main: /usr/lib/x86_64-linux-gnu/libglfw.so.3.2
 ../bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -204,6 +219,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/danil/Desktop/KG2021/template1_cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danil/Desktop/KG2021/template1_cpp /home/danil/Desktop/KG2021/template1_cpp /home/danil/Desktop/KG2021/template1_cpp/build /home/danil/Desktop/KG2021/template1_cpp/build /home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/danil/Desktop/KG2021/RogueGame/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danil/Desktop/KG2021/RogueGame /home/danil/Desktop/KG2021/RogueGame /home/danil/Desktop/KG2021/RogueGame/build /home/danil/Desktop/KG2021/RogueGame/build /home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

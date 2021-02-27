@@ -1,3 +1,3 @@
-/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles/rebuild_cache.dir
-/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles/edit_cache.dir
-/home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles/main.dir
+/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles/rebuild_cache.dir
+/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles/edit_cache.dir
+/home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles/main.dir

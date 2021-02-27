@@ -67,10 +67,10 @@ RM = /home/danil/.local/lib/python3.6/site-packages/cmake/data/bin/cmake -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danil/Desktop/KG2021/template1_cpp
+CMAKE_SOURCE_DIR = /home/danil/Desktop/KG2021/RogueGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danil/Desktop/KG2021/template1_cpp
+CMAKE_BINARY_DIR = /home/danil/Desktop/KG2021/RogueGame
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/template1_cpp/CMakeFiles /home/danil/Desktop/KG2021/template1_cpp//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/RogueGame/CMakeFiles /home/danil/Desktop/KG2021/RogueGame//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/template1_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/RogueGame/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -196,6 +196,60 @@ Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
+game.o: game.cpp.o
+
+.PHONY : game.o
+
+# target to build an object file
+game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game.cpp.o
+.PHONY : game.cpp.o
+
+game.i: game.cpp.i
+
+.PHONY : game.i
+
+# target to preprocess a source file
+game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game.cpp.i
+.PHONY : game.cpp.i
+
+game.s: game.cpp.s
+
+.PHONY : game.s
+
+# target to generate assembly for a file
+game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game.cpp.s
+.PHONY : game.cpp.s
+
+game_object.o: game_object.cpp.o
+
+.PHONY : game_object.o
+
+# target to build an object file
+game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game_object.cpp.o
+.PHONY : game_object.cpp.o
+
+game_object.i: game_object.cpp.i
+
+.PHONY : game_object.i
+
+# target to preprocess a source file
+game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game_object.cpp.i
+.PHONY : game_object.cpp.i
+
+game_object.s: game_object.cpp.s
+
+.PHONY : game_object.s
+
+# target to generate assembly for a file
+game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game_object.cpp.s
+.PHONY : game_object.cpp.s
+
 glad.o: glad.c.o
 
 .PHONY : glad.o
@@ -250,6 +304,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+resource_manager.o: resource_manager.cpp.o
+
+.PHONY : resource_manager.o
+
+# target to build an object file
+resource_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/resource_manager.cpp.o
+.PHONY : resource_manager.cpp.o
+
+resource_manager.i: resource_manager.cpp.i
+
+.PHONY : resource_manager.i
+
+# target to preprocess a source file
+resource_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/resource_manager.cpp.i
+.PHONY : resource_manager.cpp.i
+
+resource_manager.s: resource_manager.cpp.s
+
+.PHONY : resource_manager.s
+
+# target to generate assembly for a file
+resource_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/resource_manager.cpp.s
+.PHONY : resource_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -265,12 +346,21 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... game.o"
+	@echo "... game.i"
+	@echo "... game.s"
+	@echo "... game_object.o"
+	@echo "... game_object.i"
+	@echo "... game_object.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... resource_manager.o"
+	@echo "... resource_manager.i"
+	@echo "... resource_manager.s"
 .PHONY : help
 
 

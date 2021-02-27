@@ -3,6 +3,9 @@
 
 #include "game_object.h"
 
+#include <tuple>
+#include <vector>
+
 enum class MovementDir
 {
   UP,
@@ -20,10 +23,12 @@ public:
   bool Moved() const;
   void ProcessInput(MovementDir dir);
   void Draw(Image &screen);
+  
+  std::tuple<int, int, int, int> blocked_directions;
 
 private:
   Point old_coords {.x = 10, .y = 10};
-  int move_speed = 4;
+  int move_speed = 6;
 
 };
 

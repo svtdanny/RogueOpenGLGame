@@ -15,20 +15,28 @@ void Player::ProcessInput(MovementDir dir)
   switch(dir)
   {
     case MovementDir::UP:
-      old_coords.y = coords.y;
-      coords.y += move_dist;
+      if (!std::get<1>(blocked_directions)){
+        old_coords.y = coords.y;
+        coords.y += move_dist;
+      }
       break;
     case MovementDir::DOWN:
-      old_coords.y = coords.y;
-      coords.y -= move_dist;
+      if (!std::get<3>(blocked_directions)){
+        old_coords.y = coords.y;
+        coords.y -= move_dist;
+      }
       break;
     case MovementDir::LEFT:
-      old_coords.x = coords.x;
-      coords.x -= move_dist;
+      if (!std::get<0>(blocked_directions)){
+        old_coords.x = coords.x;
+        coords.x -= move_dist;
+      }
       break;
     case MovementDir::RIGHT:
-      old_coords.x = coords.x;
-      coords.x += move_dist;
+      if (!std::get<2>(blocked_directions)){
+        old_coords.x = coords.x;
+        coords.x += move_dist;
+      }
       break;
     default:
       break;
@@ -36,17 +44,25 @@ void Player::ProcessInput(MovementDir dir)
 }
 
 void Player::Draw(Image &screen)
-{
+{ 
+  Image::Pixel pix_buf;
+
   if(Moved())
   {
     old_coords = coords;
   }
 
-  for(int y = coords.y; y <= coords.y + height; ++y)
+  for(int y = coords.y; y < coords.y + height; ++y)
   {
-    for(int x = coords.x; x <= coords.x + width; ++x)
-    {
-      screen.PutPixel(x, y, Player::GetPixel(x-coords.x, height - (y-coords.y)));
+    for(int x = coords.x; x < coords.x + width; ++x)
+    { 
+      pix_buf = Player::GetPixel(x-coords.x, height-1 - (y-coords.y));
+
+      if (pix_buf.a != 0){
+      screen.PutPixel(x, y, pix_buf);
+      }
     }
   }
+  Image::Pixel d{100, 0, 0, 0};
+  screen.PutPixel(coords.x+8, coords.y+8, d);
 }

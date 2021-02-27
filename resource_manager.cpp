@@ -11,20 +11,22 @@
 #include "stb_image_write.h"
  
 
-Pixel* ResourceManager::loadData(const std::string &a_path, int* width, int* height, int* channels){
-    return (Pixel*)stbi_load(a_path.c_str(), width, height, channels, sizeof(Pixel));
+Image::Pixel* ResourceManager::loadData(const std::string &a_path, int* width, int* height, int* channels){
+    return (Image::Pixel*) stbi_load(a_path.c_str(), width, height, channels, sizeof(Image::Pixel));
 }
-/*
+
 // Создание экземпляров статических переменных
-std::map<std::string, Texture2D> ResourceManager::Textures;
+std::map<std::string, Image::Pixel *> ResourceManager::Textures;
  
-Texture2D ResourceManager::LoadTexture(const char *file, bool alpha, std::string name)
-{
-    Textures[name] = loadTextureFromFile(file, alpha);
+Image::Pixel* ResourceManager::LoadTexture(const char *file, std::string name)
+{   
+    int width, height, channels;
+    Textures[name] = loadData(file, &width, &height, &channels);
+    
     return Textures[name];
 }
  
-Texture2D ResourceManager::GetTexture(std::string name)
+Image::Pixel* ResourceManager::GetTexture(std::string name)
 {
     return Textures[name];
 }
@@ -32,25 +34,3 @@ Texture2D ResourceManager::GetTexture(std::string name)
 void ResourceManager::Clear()
 {
 }
- 
-Texture2D ResourceManager::loadTextureFromFile(const char *file, bool alpha)
-{
-    // Создаем объект текстуры
-    Texture2D texture;
-    if (alpha)
-    {
-        texture.Internal_Format = GL_RGBA;
-        texture.Image_Format = GL_RGBA;
-    }
- 
-    // Загружаем изображение
-    int width, height, nrChannels;
-    unsigned char* data = stbi_load(file, &width, &height, &nrChannels, 0);
- 
-    // Теперь генерируем текстуру
-    texture.Generate(width, height, data);
- 
-    stbi_image_free(data);
-    return texture;
-}
-*/

@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-6cd06af0c7fe5752f733.json",
+					"jsonFile" : "target-main-Debug-54de00d136d8af4aa418.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/danil/Desktop/KG2021/template1_cpp/build",
-		"source" : "/home/danil/Desktop/KG2021/template1_cpp"
+		"build" : "/home/danil/Desktop/KG2021/RogueGame/build",
+		"source" : "/home/danil/Desktop/KG2021/RogueGame"
 	},
 	"version" : 
 	{

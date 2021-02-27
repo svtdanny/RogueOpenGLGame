@@ -16,6 +16,7 @@ set(SOURCE_FILES
         game.cpp
         game_object.cpp
         resource_manager.cpp
+        game_level.cpp
         )
 
 set(ADDITIONAL_INCLUDE_DIRS

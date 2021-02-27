@@ -67,10 +67,10 @@ RM = /home/danil/.local/lib/python3.6/site-packages/cmake/data/bin/cmake -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danil/Desktop/KG2021/template1_cpp
+CMAKE_SOURCE_DIR = /home/danil/Desktop/KG2021/RogueGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danil/Desktop/KG2021/template1_cpp/build
+CMAKE_BINARY_DIR = /home/danil/Desktop/KG2021/RogueGame/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles /home/danil/Desktop/KG2021/template1_cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles /home/danil/Desktop/KG2021/RogueGame/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/template1_cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danil/Desktop/KG2021/RogueGame/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -222,6 +222,33 @@ game.s: game.cpp.s
 game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game.cpp.s
 .PHONY : game.cpp.s
+
+game_level.o: game_level.cpp.o
+
+.PHONY : game_level.o
+
+# target to build an object file
+game_level.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game_level.cpp.o
+.PHONY : game_level.cpp.o
+
+game_level.i: game_level.cpp.i
+
+.PHONY : game_level.i
+
+# target to preprocess a source file
+game_level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game_level.cpp.i
+.PHONY : game_level.cpp.i
+
+game_level.s: game_level.cpp.s
+
+.PHONY : game_level.s
+
+# target to generate assembly for a file
+game_level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/game_level.cpp.s
+.PHONY : game_level.cpp.s
 
 game_object.o: game_object.cpp.o
 
@@ -349,6 +376,9 @@ help:
 	@echo "... game.o"
 	@echo "... game.i"
 	@echo "... game.s"
+	@echo "... game_level.o"
+	@echo "... game_level.i"
+	@echo "... game_level.s"
 	@echo "... game_object.o"
 	@echo "... game_object.i"
 	@echo "... game_object.s"

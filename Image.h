@@ -3,20 +3,22 @@
 
 #include <string>
 
-constexpr int tileSize = 24;
-
-struct Pixel
-{
-  uint8_t r;
-  uint8_t g;
-  uint8_t b;
-  uint8_t a;
-};
-
-constexpr Pixel backgroundColor{0, 0, 0, 0};
+//constexpr int tileSize = 24;
 
 struct Image
-{
+{ 
+  static const int tileSize = 32;
+
+  typedef struct
+  {
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+    uint8_t a;
+  } Pixel;
+
+  const Pixel backgroundColor{100, 0, 0, 0};
+
   explicit Image(const std::string &a_path);
   Image(int a_width, int a_height, int a_channels);
 

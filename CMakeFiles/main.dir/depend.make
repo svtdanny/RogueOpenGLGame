@@ -7,17 +7,37 @@ CMakeFiles/main.dir/glad.c.o: dependencies/include/GLAD/glad/glad.h
 
 CMakeFiles/main.dir/Image.cpp.o: Image.cpp
 CMakeFiles/main.dir/Image.cpp.o: Image.h
-CMakeFiles/main.dir/Image.cpp.o: stb_image.h
-CMakeFiles/main.dir/Image.cpp.o: stb_image_write.h
+CMakeFiles/main.dir/Image.cpp.o: resource_manager.h
 
 CMakeFiles/main.dir/Player.cpp.o: Image.h
 CMakeFiles/main.dir/Player.cpp.o: Player.cpp
 CMakeFiles/main.dir/Player.cpp.o: Player.h
+CMakeFiles/main.dir/Player.cpp.o: game_object.h
+
+CMakeFiles/main.dir/game.cpp.o: game.cpp
+CMakeFiles/main.dir/game.cpp.o: game.h
+
+CMakeFiles/main.dir/game_object.cpp.o: Image.h
+CMakeFiles/main.dir/game_object.cpp.o: common.h
+CMakeFiles/main.dir/game_object.cpp.o: game_object.cpp
+CMakeFiles/main.dir/game_object.cpp.o: game_object.h
+CMakeFiles/main.dir/game_object.cpp.o: resource_manager.h
+CMakeFiles/main.dir/game_object.cpp.o: dependencies/include/GLAD/KHR/khrplatform.h
+CMakeFiles/main.dir/game_object.cpp.o: dependencies/include/GLAD/glad/glad.h
 
 CMakeFiles/main.dir/main.cpp.o: Image.h
 CMakeFiles/main.dir/main.cpp.o: Player.h
 CMakeFiles/main.dir/main.cpp.o: common.h
+CMakeFiles/main.dir/main.cpp.o: game.h
+CMakeFiles/main.dir/main.cpp.o: game_object.h
 CMakeFiles/main.dir/main.cpp.o: main.cpp
+CMakeFiles/main.dir/main.cpp.o: resource_manager.h
 CMakeFiles/main.dir/main.cpp.o: dependencies/include/GLAD/KHR/khrplatform.h
 CMakeFiles/main.dir/main.cpp.o: dependencies/include/GLAD/glad/glad.h
+
+CMakeFiles/main.dir/resource_manager.cpp.o: Image.h
+CMakeFiles/main.dir/resource_manager.cpp.o: resource_manager.cpp
+CMakeFiles/main.dir/resource_manager.cpp.o: resource_manager.h
+CMakeFiles/main.dir/resource_manager.cpp.o: stb_image.h
+CMakeFiles/main.dir/resource_manager.cpp.o: stb_image_write.h
 
