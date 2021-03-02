@@ -17,18 +17,18 @@ enum class MovementDir
 class Player : public GameObject
 {
 public:
-  explicit Player(Point pos = {.x = 10, .y = 10}) :
+  Player(Point pos = {.x = 10, .y = 10}) :
                  GameObject(pos), old_coords(pos) {};
 
   bool Moved() const;
   void ProcessInput(MovementDir dir);
   void Draw(Image &screen);
   
-  std::tuple<int, int, int, int> blocked_directions;
+  std::tuple<int, int, int, int, int> blocked_directions;
 
 private:
   Point old_coords {.x = 10, .y = 10};
-  int move_speed = 6;
+  int move_speed = 4;
 
 };
 

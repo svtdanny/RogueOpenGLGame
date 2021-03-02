@@ -53,10 +53,11 @@ bool GameLevel::IsCompleted()
 }
  */
 
-std::tuple<int, int, int, int> GameLevel::CheckCollisions(GameObject::Point player_coords){
+std::tuple<int, int, int, int, int> GameLevel::CheckCollisions(GameObject::Point player_coords){
     std::vector<GameObject> nears;
 
     int f_left=0, f_top=0, f_right=0, f_bottom=0;
+    int f_inclusive = 0;
 
     for (GameObject &tile : this->Bricks){
         if (strcmp(tile.GetType(), "wall") != 0){continue;}
@@ -66,30 +67,41 @@ std::tuple<int, int, int, int> GameLevel::CheckCollisions(GameObject::Point play
         int x_delta = - (coords.x + Image::tileSize/2) + (player_coords.x + 8);
         int y_delta = - (coords.y + Image::tileSize/2) + (player_coords.y + 8);
 
-        int critical_delta = Image::tileSize/2+5;
+        int critical_delta = Image::tileSize/2;
 
         std::cout << x_delta << "  " << y_delta << "  "; 
 
-        if ((0 <= x_delta) && (x_delta <= critical_delta) && (abs(y_delta) <= critical_delta))
-        {
-            f_left = 1; std::cout <<"f_left" ; 
+        if (abs(x_delta) >= abs(y_delta)){
+            if ((0 <= x_delta) && (x_delta <= critical_delta) && (abs(y_delta) <= critical_delta))
+            {
+                f_left += 1; std::cout <<"f_left"; 
+            }
+            if ((0 >= x_delta) && (x_delta >= (-1)*critical_delta) && (abs(y_delta) <= critical_delta))
+            {
+                f_right += 1; std::cout <<"f_right"; 
+            }
         }
-        if ((abs(x_delta) <= critical_delta) && ((0 >= y_delta) && (y_delta >= (-1)*critical_delta)))
-        {
-            f_top = 1; std::cout <<"f_top" ; 
+
+        if (abs(x_delta) <= abs(y_delta)){
+            if ((abs(x_delta) <= critical_delta) && ((0 >= y_delta) && (y_delta >= (-1)*critical_delta)))
+            {
+                f_top += 1; std::cout <<"f_top"; 
+            }
+            
+            if ((abs(x_delta) <= critical_delta) && (0 <= y_delta) && (y_delta <= critical_delta))
+            {
+                f_bottom += 1; std::cout <<"f_bottom"; 
+            }
         }
-        if ((0 >= x_delta) && (x_delta >= (-1)*critical_delta) && (abs(y_delta) <= critical_delta))
-        {
-            f_right = 1; std::cout <<"f_right"; 
+        
+        if (abs(x_delta) == abs(y_delta) && abs(y_delta) <= Image::tileSize/2){
+            f_inclusive = 1; std::cout <<"f_inclusive"; 
         }
-        if ((abs(x_delta) <= critical_delta) && (0 <= y_delta) && (y_delta <= critical_delta))
-        {
-            f_bottom = 1; std::cout <<"f_bottom"; 
-        }
+
 std::cout << std::endl; 
     }
 
-    return {f_left, f_top, f_right, f_bottom};
+    return {f_left, f_top, f_right, f_bottom, f_inclusive};
 }
 
 void GameLevel::init(std::vector<std::vector<char>> tileData)

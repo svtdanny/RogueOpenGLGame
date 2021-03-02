@@ -38,6 +38,14 @@ inttypes.h
 string
 -
 
+/home/danil/Desktop/KG2021/RogueGame/Player.h
+game_object.h
+/home/danil/Desktop/KG2021/RogueGame/game_object.h
+tuple
+-
+vector
+-
+
 /home/danil/Desktop/KG2021/RogueGame/common.h
 iostream
 -
@@ -48,21 +56,25 @@ string
 glad/glad.h
 -
 
-/home/danil/Desktop/KG2021/RogueGame/game_level.cpp
+/home/danil/Desktop/KG2021/RogueGame/game.cpp
+game.h
+/home/danil/Desktop/KG2021/RogueGame/game.h
+resource_manager.h
+/home/danil/Desktop/KG2021/RogueGame/resource_manager.h
 game_level.h
 /home/danil/Desktop/KG2021/RogueGame/game_level.h
-fstream
--
-sstream
--
-map
--
 common.h
 /home/danil/Desktop/KG2021/RogueGame/common.h
-math.h
-/home/danil/Desktop/KG2021/RogueGame/math.h
-string.h
+Player.h
+/home/danil/Desktop/KG2021/RogueGame/Player.h
+
+/home/danil/Desktop/KG2021/RogueGame/game.h
+vector
 -
+game_level.h
+/home/danil/Desktop/KG2021/RogueGame/game_level.h
+Player.h
+/home/danil/Desktop/KG2021/RogueGame/Player.h
 
 /home/danil/Desktop/KG2021/RogueGame/game_level.h
 vector

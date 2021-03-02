@@ -15,9 +15,15 @@ void Player::ProcessInput(MovementDir dir)
   switch(dir)
   {
     case MovementDir::UP:
-      if (!std::get<1>(blocked_directions)){
+      if (std::get<1>(blocked_directions) == 0){
         old_coords.y = coords.y;
         coords.y += move_dist;
+      }
+      else if (std::get<1>(blocked_directions) == 1 && std::get<4>(blocked_directions) == 1){
+        old_coords.y = coords.y;
+        coords.y += move_dist;
+
+        std::get<4>(blocked_directions) = 0;
       }
       break;
     case MovementDir::DOWN:
@@ -25,17 +31,35 @@ void Player::ProcessInput(MovementDir dir)
         old_coords.y = coords.y;
         coords.y -= move_dist;
       }
+      else if (std::get<3>(blocked_directions) == 1 && std::get<4>(blocked_directions) == 1){
+        old_coords.y = coords.y;
+        coords.y -= move_dist;
+
+        std::get<4>(blocked_directions) = 0;
+      }
       break;
     case MovementDir::LEFT:
       if (!std::get<0>(blocked_directions)){
         old_coords.x = coords.x;
         coords.x -= move_dist;
       }
+      else if (std::get<0>(blocked_directions) == 1 && std::get<4>(blocked_directions) == 1){
+        old_coords.x = coords.x;
+        coords.x -= move_dist;
+
+        std::get<4>(blocked_directions) = 0;
+      }
       break;
     case MovementDir::RIGHT:
       if (!std::get<2>(blocked_directions)){
         old_coords.x = coords.x;
         coords.x += move_dist;
+      }
+      else if (std::get<2>(blocked_directions) == 1 && std::get<4>(blocked_directions) == 1){
+        old_coords.x = coords.x;
+        coords.x += move_dist;
+
+        std::get<4>(blocked_directions) = 0;
       }
       break;
     default:

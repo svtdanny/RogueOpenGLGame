@@ -17,7 +17,7 @@ struct InputState
   bool keys[1024]{}; //массив состояний кнопок - нажата/не нажата
   GLfloat lastX = 400, lastY = 300; //исходное положение мыши
   bool firstMouse = true;
-  bool captureMouse         = true;  // Мышка захвачена нашим приложением или нет?
+  bool captureMouse         = false;  // Мышка захвачена нашим приложением или нет?
   bool capturedMouseJustNow = false;
 } static Input;
 
@@ -124,7 +124,6 @@ int initGL()
 	return 0;
 }
 
-Game game(WINDOW_WIDTH, WINDOW_HEIGHT);
 
 int main(int argc, char** argv)
 {
@@ -160,26 +159,8 @@ int main(int argc, char** argv)
 	while (gl_error != GL_NO_ERROR)
 		gl_error = glGetError();
 
-	GameObject::Point starting_pos{.x = WINDOW_WIDTH / 2, .y = WINDOW_HEIGHT / 2};
-	Player player{starting_pos};
 
-
-  GameObject bg_level(GameObject::Point{.x =0, .y = 0});  
-  
-  // Загрузка текстур
-  ResourceManager::LoadTexture("../resources/wall32.png", "wall");
-  ResourceManager::LoadTexture("../resources/floor32.png", "floor");
-
-  //ResourceManager::GetTexture("wall");
-
-  Image::Pixel * ss_wall = ResourceManager::GetTexture("wall");
-  Image::Pixel * ss_floor = ResourceManager::GetTexture("floor");
-
-  std::cout << ResourceManager::GetTexture("wall")[0].r << std::endl;
-
-  //Загрузка уровней
-  GameLevel lvl_one;
-  lvl_one.Load("../resources/levels/one.lvl");
+  Game game(WINDOW_WIDTH, WINDOW_HEIGHT);
 
 	//Image img("../resources/tex.png");
 	Image screen(WINDOW_WIDTH, WINDOW_HEIGHT, 4);
@@ -187,9 +168,6 @@ int main(int argc, char** argv)
   glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);  GL_CHECK_ERRORS;
   glClearColor(0.0f, 0.0f, 0.0f, 1.0f); GL_CHECK_ERRORS;
 
-  // Загрузка текстуры player
-  player.LoadTexture("../resources/knight.png");
-  bg_level.LoadTexture("../resources/tex.png");
   // Инициализация игры
   game.Init();
 
@@ -203,21 +181,14 @@ int main(int argc, char** argv)
 
     // Обновляем состояние игры
     game.Update(deltaTime);
-
-    bg_level.Draw(screen);
-    lvl_one.Draw(screen);
-
-    player.blocked_directions = lvl_one.CheckCollisions(player.GetCoords());
-    std::cout << std::get<0>(player.blocked_directions) << std::get<1>(player.blocked_directions) << std::get<2>(player.blocked_directions) << std::get<3>(player.blocked_directions) << std::endl;
-    processPlayerMovement(player);
-    player.Draw(screen);
+    processPlayerMovement((*game.player));
 
     // Рендер    
+    game.Render(screen);
+
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); GL_CHECK_ERRORS;
     glDrawPixels (WINDOW_WIDTH, WINDOW_HEIGHT, GL_RGBA, GL_UNSIGNED_BYTE, screen.Data()); GL_CHECK_ERRORS;
-
-    //game.Render();
 
 		glfwSwapBuffers(window);
 	}

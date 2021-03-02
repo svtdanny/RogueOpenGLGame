@@ -1,7 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <GLFW/glfw3.h>
+#include <vector>
+
+#include "game_level.h"
+#include "Player.h"
 
 // Описываем текущее состояние игры
 enum GameState {
@@ -21,12 +24,17 @@ class Game
 {
 public: 
     // Игровое состояние
-    GameState State;	
+    GameState State;
     bool Keys[1024];
-    unsigned int Width, Height;
- 
+    int Width, Height;
+    
+    std::vector<GameLevel> Levels;
+    int Level;
+
+    Player* player;
+
     // Конструктор
-    Game(unsigned int width, unsigned int height);
+    Game(int width, int height);
  
     // Деструктор
     ~Game();
@@ -37,7 +45,7 @@ public:
     // Игровой цикл
     void ProcessInput(float dt);
     void Update(float dt);
-    void Render();
+    void Render(Image &screen);
 };
 
 #endif

@@ -23,7 +23,7 @@ public:
     void Draw(Image &screen);
     
     // Функция для проверки коллизий <left, top, right, bottom>
-    std::tuple<int, int, int, int> CheckCollisions(GameObject::Point);
+    std::tuple<int, int, int, int, int> CheckCollisions(GameObject::Point);
     
 private:
     // Инициализация уровня данными из tileData
